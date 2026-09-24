@@ -1,0 +1,23 @@
+body {
+    background-color: #f9dce5;
+    color: #7a3049;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #8f3654;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+}
