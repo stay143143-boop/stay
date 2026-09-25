@@ -272,3 +272,45 @@
     </div>
 
 </section>
+<script>
+    const button = document.getElementById("butterflyButton");
+    const container = document.getElementById("butterflies");
+
+    button.addEventListener("click", function () {
+
+        for (let i = 0; i < 12; i++) {
+
+            const butterfly = document.createElement("div");
+
+            butterfly.className = "flying-butterfly";
+            butterfly.textContent = "🦋";
+
+            butterfly.style.left = "50%";
+            butterfly.style.top = "65%";
+
+            butterfly.style.setProperty(
+                "--x",
+                `${Math.random() * 500 - 250}px`
+            );
+
+            butterfly.style.setProperty(
+                "--y",
+                `${-Math.random() * 500 - 100}px`
+            );
+
+            butterfly.style.setProperty(
+                "--rotation",
+                `${Math.random() * 80 - 40}deg`
+            );
+
+            butterfly.style.animationDelay =
+                `${Math.random() * 0.8}s`;
+
+            container.appendChild(butterfly);
+
+            setTimeout(() => {
+                butterfly.remove();
+            }, 5000);
+        }
+    });
+</script>
