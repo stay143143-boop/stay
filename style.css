@@ -129,9 +129,7 @@ h3 {
    ========================= */
 
 .story {
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .story p {
@@ -242,4 +240,35 @@ h3 {
         font-size: 22px;
     }
 
+}
+.butterfly-fact {
+    margin: 65px auto;
+    padding: 35px 25px;
+    max-width: 650px;
+
+    border-top: 1px solid rgba(213, 163, 49, 0.45);
+    border-bottom: 1px solid rgba(213, 163, 49, 0.45);
+
+    position: relative;
+}
+
+.fact-number {
+    color: #d5a331;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.butterfly-fact h4 {
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 29px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 25px;
+}
+
+.butterfly-fact p {
+    margin-bottom: 20px;
 }
