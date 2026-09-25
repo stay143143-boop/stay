@@ -409,3 +409,263 @@ document.addEventListener("DOMContentLoaded", function () {
         opacity: 0;
     }
 }
+/* =========================
+   CHAPTER III — MEMORIES
+   ========================= */
+
+.memory-chapter {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* INTRO */
+
+.memory-intro {
+    max-width: 680px;
+    margin: 0 auto 70px;
+}
+
+.memory-intro p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* MEMORY CARDS */
+
+.memory-card {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto 65px;
+    padding: 42px 45px;
+    
+    background: rgba(255, 248, 250, 0.55);
+    
+    border: 1px solid rgba(213, 163, 49, 0.35);
+    border-radius: 4px;
+    
+    box-shadow:
+        0 10px 35px rgba(143, 54, 84, 0.06);
+    
+    text-align: center;
+    
+    transform: rotate(-0.5deg);
+    
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.memory-card:hover {
+    transform: rotate(0deg) translateY(-4px);
+    
+    box-shadow:
+        0 15px 40px rgba(143, 54, 84, 0.10);
+}
+
+
+/* SECOND CARD LEANS THE OTHER WAY */
+
+.memory-card-right {
+    transform: rotate(0.6deg);
+}
+
+.memory-card-right:hover {
+    transform: rotate(0deg) translateY(-4px);
+}
+
+
+/* NUMBER */
+
+.memory-number {
+    color: #d5a331;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+
+/* LITTLE SYMBOL */
+
+.memory-symbol {
+    color: #d5a331;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+
+/* CARD TITLE */
+
+.memory-card h4 {
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 25px;
+}
+
+
+/* CARD TEXT */
+
+.memory-card p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.memory-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* THIRD CARD */
+
+.growing-together {
+    margin-top: 90px;
+    transform: rotate(-0.3deg);
+}
+
+.growing-together:hover {
+    transform: rotate(0deg) translateY(-4px);
+}
+
+
+/* =========================
+   TIMELINE
+   ========================= */
+
+.memory-timeline {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.timeline-item span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #d5a331;
+    border-radius: 50%;
+
+    color: #b07a22;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+}
+
+.timeline-item p {
+    margin: 12px 0 0;
+
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.timeline-line {
+    width: 1px;
+    height: 35px;
+    background: rgba(213, 163, 49, 0.45);
+    margin: 12px auto;
+}
+
+
+/* =========================
+   FINAL LETTER
+   ========================= */
+
+.memory-letter {
+    position: relative;
+
+    max-width: 680px;
+    margin: 120px auto 70px;
+    padding: 55px 35px;
+
+    border-top: 1px solid rgba(213, 163, 49, 0.45);
+    border-bottom: 1px solid rgba(213, 163, 49, 0.45);
+
+    text-align: center;
+}
+
+.letter-decoration {
+    color: #d5a331;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.memory-letter p {
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    line-height: 1.7;
+
+    margin: 0 0 25px;
+}
+
+.memory-letter .letter-ending {
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    font-size: 29px;
+    font-style: italic;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .memory-intro {
+        margin-bottom: 50px;
+    }
+
+    .memory-intro p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .memory-card {
+        padding: 32px 22px;
+        margin-bottom: 50px;
+    }
+
+    .memory-card h4 {
+        font-size: 29px;
+    }
+
+    .memory-card p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .memory-timeline {
+        margin: 75px auto;
+    }
+
+    .timeline-item p {
+        font-size: 21px;
+    }
+
+    .memory-letter {
+        margin-top: 80px;
+        padding: 45px 20px;
+    }
+
+    .memory-letter p {
+        font-size: 21px;
+        line-height: 1.7;
+    }
+
+    .memory-letter .letter-ending {
+        font-size: 26px;
+    }
+}
