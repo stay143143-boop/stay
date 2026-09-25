@@ -1,23 +1,245 @@
 body {
-    background-color: #f9dce5;
+    background: linear-gradient(180deg, #f9dce5 0%, #fce8ee 100%);
     color: #7a3049;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin: 0;
     padding: 60px 20px;
+    position: relative;
+    overflow-x: hidden;
 }
+
+
+/* =========================
+   GOLDEN BACKGROUND STARS
+   ========================= */
+
+.star-field {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    color: #e8b94f;
+    opacity: 0.75;
+    text-shadow: 0 0 8px rgba(232, 185, 79, 0.35);
+}
+
+/* Different sizes and positions */
+
+.star-1  { top: 7%;  left: 8%;  font-size: 18px; }
+.star-2  { top: 13%; right: 12%; font-size: 12px; }
+.star-3  { top: 23%; left: 4%;  font-size: 25px; }
+.star-4  { top: 31%; right: 6%; font-size: 15px; }
+.star-5  { top: 42%; left: 9%;  font-size: 12px; }
+.star-6  { top: 51%; right: 10%; font-size: 23px; }
+.star-7  { top: 62%; left: 4%;  font-size: 17px; }
+.star-8  { top: 69%; right: 5%; font-size: 11px; }
+.star-9  { top: 78%; left: 10%; font-size: 25px; }
+.star-10 { top: 84%; right: 13%; font-size: 16px; }
+
+.star-11 { top: 17%; left: 17%; font-size: 9px; opacity: 0.55; }
+.star-12 { top: 36%; right: 18%; font-size: 10px; opacity: 0.6; }
+.star-13 { top: 47%; left: 17%; font-size: 8px; opacity: 0.55; }
+.star-14 { top: 58%; right: 18%; font-size: 9px; opacity: 0.55; }
+.star-15 { top: 73%; left: 18%; font-size: 13px; }
+.star-16 { top: 91%; right: 19%; font-size: 9px; opacity: 0.6; }
+.star-17 { top: 9%; right: 25%; font-size: 10px; opacity: 0.55; }
+.star-18 { top: 28%; left: 23%; font-size: 8px; opacity: 0.5; }
+.star-19 { top: 65%; right: 24%; font-size: 12px; }
+.star-20 { top: 88%; left: 25%; font-size: 9px; opacity: 0.55; }
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.dedication,
+header,
+main {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   DEDICATION
+   ========================= */
+
+.dedication {
+    color: #d5a331;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
 
 h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 64px;
     font-weight: 600;
     color: #8f3654;
-    margin-bottom: 20px;
+    margin: 0 0 15px;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 650px;
+header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: #9b4862;
+    max-width: 750px;
+    margin: 0 auto 70px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   CHAPTER TITLES
+   ========================= */
+
+.chapter-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #b06a7e;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 39px;
+    font-weight: 500;
+    font-style: italic;
+    color: #8f3654;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   STORY
+   ========================= */
+
+.story {
+    max-width: 720px;
     margin: 0 auto;
+    text-align: left;
+}
+
+.story p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 24px;
+}
+
+.story strong {
+    color: #8f3654;
+}
+
+
+/* =========================
+   CHAPTER ENDING
+   ========================= */
+
+.ending {
+    margin-top: 40px !important;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px !important;
+    font-style: italic;
+    color: #8f3654;
+}
+
+
+/* =========================
+   MOOD-LIFTING MESSAGE
+   ========================= */
+
+.chapter-message {
+    max-width: 650px;
+    margin: 85px auto 90px;
+    text-align: center;
+}
+
+.chapter-message::before {
+    content: "♡";
+    display: block;
+    color: #d5a331;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.chapter-message p {
+    margin: 0;
+    color: #c27a91;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BOTTOM DECORATION
+   ========================= */
+
+.bottom-stars {
+    color: #d5a331;
+    font-size: 22px;
+    margin-top: 70px;
+}
+
+
+/* =========================
+   PHONE SCREENS
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 45px 20px;
+    }
+
+    h1 {
+        font-size: 47px;
+    }
+
+    header h2 {
+        font-size: 23px;
+        margin-bottom: 55px;
+    }
+
+    .dedication {
+        font-size: 19px;
+    }
+
+    .chapter-title {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .story p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .chapter-message {
+        margin: 65px auto 70px;
+    }
+
+    .chapter-message p {
+        font-size: 22px;
+    }
+
 }
