@@ -272,3 +272,109 @@ h3 {
 .butterfly-fact p {
     margin-bottom: 20px;
 }
+.butterfly-surprise {
+    margin: 80px auto 40px;
+    text-align: center;
+}
+
+#butterflyButton {
+    background: transparent;
+    border: 1px solid #d5a331;
+    color: #b07a22;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    padding: 14px 28px;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+#butterflyButton:hover {
+    background-color: #d5a331;
+    color: white;
+    transform: translateY(-2px);
+}
+
+#butterflies {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.flying-butterfly {
+    position: absolute;
+    font-size: 30px;
+    animation: flyAway 4s ease-out forwards;
+}
+
+@keyframes flyAway {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(0.5);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translate(var(--x), var(--y))
+            rotate(var(--rotation))
+            scale(1.2);
+        opacity: 0;
+    }
+}
+<script>
+    const button = document.getElementById("butterflyButton");
+    const container = document.getElementById("butterflies");
+
+    button.addEventListener("click", function () {
+
+        for (let i = 0; i < 12; i++) {
+
+            const butterfly = document.createElement("div");
+
+            butterfly.className = "flying-butterfly";
+            butterfly.textContent = "🦋";
+
+            butterfly.style.left = "50%";
+            butterfly.style.top = "65%";
+
+            butterfly.style.setProperty(
+                "--x",
+                `${Math.random() * 500 - 250}px`
+            );
+
+            butterfly.style.setProperty(
+                "--y",
+                `${-Math.random() * 500 - 100}px`
+            );
+
+            butterfly.style.setProperty(
+                "--rotation",
+                `${Math.random() * 80 - 40}deg`
+            );
+
+            butterfly.style.animationDelay =
+                `${Math.random() * 0.8}s`;
+
+            container.appendChild(butterfly);
+
+            setTimeout(() => {
+                butterfly.remove();
+            }, 5000);
+        }
+    });
+</script>
+</body>
