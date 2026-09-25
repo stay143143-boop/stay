@@ -336,6 +336,8 @@ h3 {
     }
 }
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+
     const button = document.getElementById("butterflyButton");
     const container = document.getElementById("butterflies");
 
@@ -371,10 +373,39 @@ h3 {
 
             container.appendChild(butterfly);
 
-            setTimeout(() => {
+            setTimeout(function () {
                 butterfly.remove();
             }, 5000);
         }
     });
+
+});
 </script>
-</body>
+
+                   #butterflies {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.flying-butterfly {
+    position: absolute;
+    font-size: 30px;
+    animation: flyAway 4s ease-out forwards;
+}
+
+@keyframes flyAway {
+    from {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(var(--x), var(--y))
+                   rotate(var(--rotation))
+                   scale(1.2);
+        opacity: 0;
+    }
+}
