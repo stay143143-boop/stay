@@ -1312,3 +1312,49 @@ body.letter-open {
     }
 
 }
+
+                   /* =========================
+   CHAPTER TITLES
+   ========================= */
+
+.chapter-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #b06a7e;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 39px;
+    font-weight: 500;
+    font-style: italic;
+    color: #8f3654;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   STORY
+   ========================= */
+
+.story {
+    text-align: center;
+}
+
+.story p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 24px;
+}
+
+.story strong {
+    color: #8f3654;
+}
+
+
+/* =========================
+   CHAPTER ENDING
+   ========================= */
