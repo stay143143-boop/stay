@@ -1313,3 +1313,183 @@ body.letter-open {
 
 }
 
+/* =========================
+   CHAPTER V — THE FUTURE
+   ========================= */
+
+.future-chapter {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.future-intro {
+    max-width: 700px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.future-intro p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 26px;
+}
+
+.future-section {
+    margin: 100px auto;
+}
+
+.future-section-title {
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 31px;
+    font-style: italic;
+    margin-bottom: 45px;
+}
+
+.sticky-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.sticky-note {
+    min-height: 250px;
+    padding: 35px 28px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+
+    box-shadow:
+        0 12px 25px rgba(143, 54, 84, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.sticky-note::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    width: 55px;
+    height: 14px;
+    transform: translateX(-50%) rotate(-2deg);
+    background: rgba(213, 163, 49, 0.18);
+}
+
+.sticky-note:nth-child(1) {
+    transform: rotate(-2deg);
+}
+
+.sticky-note:nth-child(2) {
+    transform: rotate(1.5deg);
+}
+
+.sticky-note:nth-child(3) {
+    transform: rotate(-0.8deg);
+}
+
+.sticky-note:hover {
+    transform: translateY(-7px) rotate(0deg);
+    box-shadow:
+        0 18px 35px rgba(143, 54, 84, 0.12);
+}
+
+.sticky-pink {
+    background: #f9e3e9;
+}
+
+.sticky-cream {
+    background: #fff7ed;
+}
+
+.sticky-rose {
+    background: #f4dce2;
+}
+
+.sticky-icon {
+    color: #d5a331;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.sticky-note h4 {
+    margin: 0 0 20px;
+
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.sticky-note p {
+    margin: 0;
+
+    color: #7a3049;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.zoom-note {
+    margin: -35px auto 100px;
+
+    color: #b07a22;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+    opacity: 0.75;
+}
+
+
+/* FINAL LETTER */
+
+.future-letter {
+    max-width: 700px;
+    margin: 110px auto 100px;
+    padding: 55px 35px;
+
+    border-top: 1px solid rgba(213, 163, 49, 0.45);
+    border-bottom: 1px solid rgba(213, 163, 49, 0.45);
+
+    text-align: center;
+}
+
+.future-letter p {
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    line-height: 1.75;
+    margin: 0 0 35px;
+}
+
+.future-letter .future-ending {
+    margin-bottom: 0;
+    font-size: 29px;
+    font-style: italic;
+}
+
+
+/* DRAWING */
+
+.drawing-section {
+    max-width: 700px;
+    margin: 100px auto 120px;
+    text-align: center;
+}
+
+.drawing-title {
+    color: #8f3654;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.drawing-subtitle {
+    color: #b06a7e;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    margin: 10px 0 30
